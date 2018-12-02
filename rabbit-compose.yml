@@ -1,0 +1,24 @@
+version: '3'
+services:
+ rabbitmq:
+  build: ./rabbitmqtt
+  networks:
+   - inet1
+  ports:
+   - 15672:15672
+   - 5672:5672
+   - 1883:1883
+  environment:
+   - AUTOCLUSTER_TYPE=etcd
+   - ETCD_HOST=etcd_server
+   - ETCD_TTL=30
+   - RABBITMQ_ERLANG_COOKIE=ilovebeam
+   - AUTOCLUSTER_CLEANUP=true
+   - CLEANUP_WARN_ONLY=false
+  deploy:
+   replicas: 1
+
+networks:
+ inet1:
+  external:
+   name: rabbitmq-network
