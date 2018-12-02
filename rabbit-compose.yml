@@ -1,7 +1,7 @@
 version: '3'
 services:
  rabbitmq:
-  build: ./rabbitmqtt
+  image: rabbitmqtt-autocluster
   networks:
    - inet1
   ports:
@@ -10,7 +10,7 @@ services:
    - 1883:1883
   environment:
    - AUTOCLUSTER_TYPE=etcd
-   - ETCD_HOST=etcd_server
+   - ETCD_HOST=etcd
    - ETCD_TTL=30
    - RABBITMQ_ERLANG_COOKIE=ilovebeam
    - AUTOCLUSTER_CLEANUP=true
