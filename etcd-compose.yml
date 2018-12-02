@@ -1,6 +1,6 @@
 version: '3'
 services:
- server:
+ etcd:
   image: bitnami/etcd
   networks:
    - inet1
@@ -9,7 +9,7 @@ services:
    - 2380:2380
   environment:
    - ALLOW_NONE_AUTHENTICATION=yes
-   - ETCD_ADVERTISE_CLIENT_URLS=http://etcd_server:2379
+   - ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379
   deploy:
    replicas: 1
 
