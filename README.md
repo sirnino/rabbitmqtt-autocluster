@@ -17,12 +17,12 @@ Moreover, your docker daemon must be in SWARM mode. [Here](https://docs.docker.c
 If everything is ok with your environment you should have the following outputs
 
 ```
-*asirchia@hostname1:~$* docker --version
+user@hostname1:~$ docker --version
 Docker version 18.09.0, build 4d60db4
 ```
 
 ```
-*asirchia@hostname1:~$* docker-compose --version
+user@hostname1:~$ docker-compose --version
 docker-compose version 1.21.2, build a133471
 ```
 
@@ -46,17 +46,17 @@ For production environment be sure to disable the guest/guest user and create sp
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sirnino/rabbitmqtt-autocluster/tags). 
 
 ## Authors
 
 * **Antonino Sirchia** - *Initial work* - [sirnino](https://github.com/sirnino)
 
-See also the list of [contributors]() who participated in this project.
+See also the list of [contributors](https://github.com/sirnino/rabbitmqtt-autocluster/graphs/contributors) who participated in this project.
 
 ## License
 
