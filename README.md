@@ -1,5 +1,6 @@
 # RabbitMQTT Autocluster
 A MQTT Broker, based on RabbitMQ, able to be clusterized simply scaling services replicas (only docker swarm mode).
+Wrapper of the [gsantomaggio/rabbitmq-autocluster](https://hub.docker.com/r/gsantomaggio/rabbitmq-autocluster/) image.
 
 ## Getting Started
 
