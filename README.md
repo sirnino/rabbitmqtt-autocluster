@@ -28,14 +28,37 @@ user@hostname1:~$ docker-compose --version
 docker-compose version 1.21.2, build a133471
 ```
 
+If you want to clone the project in order to be alwasys updated with the most recent releases, you also need [git](https://git-scm.com/downloads):
+
 ### Installing
 
-The software is equipped with a [startup script](startup.sh)
-To start the software you have only to type:
+The recommended way to obtain the software is cloning the git repository as follows:
+
+```
+git clone https://github.com/sirnino/rabbitmqtt-autocluster.git
+```
+
+If you don't have git installed you can download the software from [here](https://github.com/sirnino/rabbitmqtt-autocluster/archive/master.zip) (note that you won't be able to update the software with the new releases).
+
+The software is equipped with a [startup script](startup.sh).
+To start the software you have only to give the script the proper execution rights, as follows:
+
+```
+chmod +x startup.sh
+```
+
+then you can execute the script as follows:
 
 ```
 ./startup.sh
 ```
+
+Now you should have:
+* 1 (one) rabbitmqtt-autocluster
+* 1 (one) etcd server 
+
+up and running.
+
 To check if the rabbitmqtt-autocluster is up and running go to [127.0.0.1:15672](127.0.0.1:15672).
 You can login with the user guest/guest.
 
