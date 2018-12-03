@@ -1,6 +1,8 @@
 #Start from a rabbit instance able to autocluster
 FROM gsantomaggio/rabbitmq-autocluster
 
+COPY ./rabbit.conf /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+
 #Enable the ManagementUI plugin
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 
